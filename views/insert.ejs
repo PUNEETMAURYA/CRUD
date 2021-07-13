@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+<div class="row insert-data">
+    <div class="container-fluid">
+      
+     
+  <form action="/insert" method="POST">
+    <h3><%= pagetitle %></h3>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          <input type="text" class="form-control" required name="name" value="" id="name" placeholder="Name">
+        </div>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          <input type="text" class="form-control" required name="state" value="" id="city" placeholder="City">
+        </div>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          <input type="number" class="form-control" required name="age" value="" id="age" placeholder="Age">
+        </div>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          <input type="number" class="form-control" required name="roll" value="" id="roll" placeholder="Roll">
+        </div>
+        <button type="submit" class="btn btn-primary offset-5">Submit</button>
+      
+  </form>
+</div>
+</div>
+<%- include('partials/footer.ejs') %>

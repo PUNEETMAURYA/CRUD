@@ -1,0 +1,28 @@
+.main-div{
+ padding:3% 10%;  
+}
+.submit-button{
+    width:200px;
+    margin:0 auto;
+}
+.insert-data{
+    padding-top:10%;
+}
+.icon{
+    cursor: pointer;
+    transition: transform .2s;
+}
+.icon:hover{
+    transform: scale(1.5);
+}
+.icon-edit:hover{
+    color:orange;
+    
+}
+.icon-delete:hover{
+    color:red;
+    
+}
+h3{
+    text-align: center;
+}

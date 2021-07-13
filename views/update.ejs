@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+<div class="row insert-data">
+    <div class="container-fluid">
+      
+        
+  <form action="/update/<%= mystudent._id %>" method="POST">
+    <h3><%= pagetitle %></h3>
+
+        <div class=" mb-3 col-lg-6 offset-3">
+            
+          <input type="text" class="form-control" required name="name" value="<%= mystudent.Name%>" id="name" placeholder="Name">
+        </div>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          Residence<input type="text" class="form-control" required name="state" value="<%= mystudent.State%>" id="city" placeholder="City">
+        </div>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          Age<input type="number" class="form-control" required name="age" value="<%= mystudent.Age%>" id="age" placeholder="Age">
+        </div>
+        <div class="mb-3 col-lg-6 offset-3">
+          
+          Roll<input type="number" class="form-control" required name="roll" value="<%= mystudent.Roll%>" id="roll" placeholder="Roll">
+        </div>
+        <button type="submit" class="btn btn-primary offset-5">Submit</button>
+      
+  </form>
+</div>
+</div>
+<%- include('partials/footer.ejs') %>
